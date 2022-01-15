@@ -3,7 +3,7 @@
     <label>Current User: thanhkxth2109048@fpt.edu.vn</label>
   </div>
   <div>
-    <button>Add Product</button>
+    <button (click)="save()">Add Product</button>
   </div>
   <div>
     <table class="pro_create">
@@ -11,8 +11,18 @@
         <tr>
           <th>Sửa</th>
           <th>Xóa</th>
-          <th><input type="text" placeholder="Product Name"></th>
-          <th><input type="text" placeholder="Product Price"></th>
+          <th><input
+            [(ngModel)]="pro_edit.productname"
+            name="productname"
+            type="text"
+            placeholder="Product Name">
+          </th>
+          <th><input
+            [(ngModel)]="pro_edit.productprice"
+            name="productprice"
+            type="text"
+            placeholder="Product Price">
+          </th>
         </tr>
       </thead>
       <tr class="pro_cre-item" *ngFor="let pro of product">
