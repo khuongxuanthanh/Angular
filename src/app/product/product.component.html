@@ -3,12 +3,24 @@
     <label>Current User: thanhkxth2109048@fpt.edu.vn</label>
   </div>
   <div>
-    <button routerLink="/editproduct">Add Product</button>
+    <button>Add Product</button>
   </div>
   <div>
-    <label class="pro_layout-label-sua-xoa">Sửa</label>
-    <label class="pro_layout-label-sua-xoa">Xóa</label>
-    <input type="text" placeholder="Product Name">
-    <input type="text" placeholder="Product Price">
+    <table class="pro_create">
+      <thead class="pro_create-thead">
+        <tr>
+          <th>Sửa</th>
+          <th>Xóa</th>
+          <th><input type="text" placeholder="Product Name"></th>
+          <th><input type="text" placeholder="Product Price"></th>
+        </tr>
+      </thead>
+      <tr *ngFor="let pro of product">
+        <td routerLink="/editproduct"><i class="fas fa-edit"></i></td>
+        <td><i class="far fa-trash-alt"></i></td>
+        <td>{{pro.productname}}</td>
+        <td>{{pro.productprice}}</td>
+      </tr>
+    </table>
   </div>
 </div>
