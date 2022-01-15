@@ -67,7 +67,28 @@ body{
   border: none;
 }
 
-.
+.pro_cre-icon {
+  width: 32px;
+  height: 32px;
+  color: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pro_cre-icon.edit {
+  background-color: #161685;
+
+}
+
+.pro_cre-icon.delete {
+  background-color: orangered;
+}
+
+.pro_cre-item {
+  padding: 4px 0 4px;
+}
 
 .editpro_layout {
   width: 360px;
@@ -75,4 +96,5 @@ body{
   padding: 16px;
   border: 1px solid orchid;
   border-radius: 8px;
+  margin: auto;
 }

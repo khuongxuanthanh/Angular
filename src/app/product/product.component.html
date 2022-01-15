@@ -15,9 +15,9 @@
           <th><input type="text" placeholder="Product Price"></th>
         </tr>
       </thead>
-      <tr *ngFor="let pro of product">
-        <td routerLink="/editproduct"><i class="fas fa-edit"></i></td>
-        <td><i class="far fa-trash-alt"></i></td>
+      <tr class="pro_cre-item" *ngFor="let pro of product">
+        <td routerLink="/editproduct"><i class="fas fa-edit pro_cre-icon edit"></i></td>
+        <td><i class="far fa-trash-alt pro_cre-icon delete"></i></td>
         <td>{{pro.productname}}</td>
         <td>{{pro.productprice}}</td>
       </tr>

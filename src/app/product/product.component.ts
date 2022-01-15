@@ -13,6 +13,7 @@ export class ProductComponent {
     {productname:"ProductFour", productprice:"$123.82"},
     {productname:"ProductFive", productprice:"123.75"},
   ];
+  productedit = {};
   constructor(){}
   ngOnInit(): void{}
 }
